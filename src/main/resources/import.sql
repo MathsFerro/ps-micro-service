@@ -1,0 +1,1 @@
+INSERT INTO tb_ods (title, description, created_at) VALUES ('Vida na Água', 'Conservação e uso sustentável dos oceanos, dos mares e dos recursos marinhos para o desenvolvimento sustentável', current_timestamp);
