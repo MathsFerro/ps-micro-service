@@ -29,7 +29,7 @@ public class Goal {
     @CreationTimestamp
     @Column(name = "created_at")
     private LocalDateTime createdAt;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "ods_id")
     private Ods ods;
 
