@@ -11,7 +11,8 @@ import java.time.LocalDateTime;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class GoalDTO implements Serializable {
 
     private Long id;

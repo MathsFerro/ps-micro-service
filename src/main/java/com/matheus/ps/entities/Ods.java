@@ -13,7 +13,8 @@ import java.util.stream.Collectors;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 @Entity
 @Table(name = "tb_ods")
 public class Ods {
@@ -26,7 +27,7 @@ public class Ods {
     @CreationTimestamp
     @Column(name = "created_at")
     private LocalDateTime createdAt;
-    @OneToMany(mappedBy = "ods", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "ods", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Goal> goals = new ArrayList<>();
 
     public Ods(OdsDTO dto) {

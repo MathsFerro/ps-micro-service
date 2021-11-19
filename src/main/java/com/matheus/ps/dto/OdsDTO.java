@@ -15,7 +15,8 @@ import java.util.stream.Collectors;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class OdsDTO implements Serializable {
 
     private Long id;
